@@ -11,17 +11,15 @@ function Square({ onClick, Value }) {
   }
 
   return (
-    <div 
+    <div className="myelement"
     style={{
-      width: "8vw", 
-      height: "8vw", 
       background: backgroundColor,
       margin: "0.5vh 0.5vh",
       display: "flex", 
       justifyContent: "center",
       alignItems: "center", 
       cursor: "pointer",
-      fontSize: "3vw", 
+      // fontSize: "3vw", 
       border:"2px solid #333",
       borderRadius:"5px"
     }}

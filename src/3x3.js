@@ -98,9 +98,11 @@ function Matrix3({ value }) {
         {/* <button type="button" className="btn btn-outline-secondary" style={{marginRight:"2vw"}}>
         <i class="fa-solid fa-backward"></i> &nbsp; Back
         </button> */}
-        <span style={{ color: "#D6DAC8", marginRight:"2vw", marginLeft:"2vw", fontSize: "2vw"}}>
+        <div className="turntitle" style={{ color: "#D6DAC8", marginRight:"2vw", marginLeft:"2vw"}}>
+        
           {winner ? `${winner} wins!` : `${isXNext ? "Turn of - X" : "Turn of - O"}`}
-        </span>
+        </div>
+        
         <button type="button" className="btn btn-outline-secondary" onClick={resetGame}>
           Reset &nbsp;
           <i class="fa-solid fa-rotate-right"></i>

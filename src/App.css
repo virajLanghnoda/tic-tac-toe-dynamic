@@ -13,6 +13,27 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .myelement {
+    width: 8vh;
+    height: 8vh;
+    font-size: 3vh;
+  }
+  .turntitle{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .myelement  {
+    width: 8vw;
+    height: 8vw;
+    font-size: 3vw;
+  }
+  .turntitle{
+    font-size: 20px;
+  }
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
