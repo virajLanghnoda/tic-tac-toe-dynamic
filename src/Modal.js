@@ -4,7 +4,7 @@ function Modal({ isOpen, winner, onRestart, onClose }) {
 
   return (
     <div>
-      {/* Modal backdrop that also acts as an overlay */}
+      
       <div className="modal-backdrop show"></div>
 
       {/* Modal window */}

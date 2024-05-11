@@ -7,31 +7,35 @@ import { useEffect } from "react";
 
 
 function App() {
+
   useEffect(() => {
     const handleBeforeUnload = (event) => {
-      // Prevent the window from being closed by setting the returnValue
       event.preventDefault();
       event.returnValue = '';
     };
 
-    // Add event listener for beforeunload
     window.addEventListener('beforeunload', handleBeforeUnload);
 
-    // Cleanup function to remove the event listener
     return () => {
       console.log("Reloaded");
       window.removeEventListener('beforeunload', handleBeforeUnload);
     };
   }, []);
+
   return (
-    <Router>
+    <>
+    <h2 style={{marginTop:"10px"}} className="d-flex justify-content-center align-items-center"> <span style={{color:"#B2A59B"}}>Tic  &nbsp;</span>  <span style={{color:"#76ABAE"}}>Tac &nbsp;</span><span style={{color:"#B2A59B"}}>Toe  &nbsp;</span><span style={{color:"#76ABAE"}}>Game </span></h2>
+    <DropDown />
+    {/* <Matrix3 value={3}/> */}
+    
+    {/* <Router>
       <Routes>
         <Route exact path="/" element={<DropDown />} />
-      </Routes>
-      <Routes>
         <Route exact path="/:matrixsize" element={<Matrix3 />} />
       </Routes>
-    </Router>
+    </Router> */}
+    </>
+    
   );
 }
 

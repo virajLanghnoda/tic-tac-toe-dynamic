@@ -1,22 +1,31 @@
 import { useNavigate } from "react-router-dom";
+import Matrix3 from "./3x3";
+import { useState } from "react";
 
 export const DropDown = () => {
-  const navigate = useNavigate();
+//   const navigate = useNavigate();
+const [value, setValue]=useState(3);
   const handleChange = (event) => {
     console.log("Selected Value:", event.target.value);
+    
     // Navigate based on selection
     if (event.target.value === "value1") {
-      navigate("/3");
+        setValue(3)
+    //   navigate("/3");
     } else if (event.target.value === "value2") {
-      navigate("/4"); 
+        setValue(4)
+    //   navigate("/4"); 
     } else if (event.target.value === "value3") {
-      navigate("/5"); 
+        setValue(5)
+    //   navigate("/5"); 
     }
   };
+
   return (
+    <>
     <div
       className="d-flex justify-content-center align-items-center"
-      style={{ height: "100vh" }}
+      style={{ margin:"5vh" }}
     >
       <select className="custom-dropdown" onChange={handleChange}>
         <option value="">Select Matrix Size</option>
@@ -25,5 +34,7 @@ export const DropDown = () => {
         <option value="value3">5 X 5</option>
       </select>
     </div>
+    <Matrix3 value={value}/>
+    </>
   );
 };

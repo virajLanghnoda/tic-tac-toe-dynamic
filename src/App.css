@@ -40,22 +40,22 @@
 
 .custom-dropdown {
   align-items: center;
-  width: 200px; /* Set the width of the dropdown */
-  height: 40px; /* Set the height of the dropdown */
-  padding: 5px 10px; /* Padding inside the dropdown */
-  font-size: 16px; /* Size of the text */
-  border: 2px solid #ccdae9; /* Border color */
-  border-radius: 5px; /* Rounded corners */
-  background-color: white; /* Background color */
-  color: #333; /* Text color */
-  cursor: pointer; /* Change cursor to pointer */
+  width: 200px; 
+  height: 40px; 
+  padding: 5px 10px; 
+  font-size: 20px;
+  border: 2px solid #748291; 
+  border-radius: 15px; 
+  background-color: #76ABAE; 
+  color: #333; 
+  cursor: pointer; 
 }
 
 .custom-dropdown:hover {
-  background-color: #ccdae9; /* Change background on hover */
+  background-color: #B2A59B; 
 }
 
 .custom-dropdown:focus {
-  outline: none; /* Remove the focus outline */
-  border-color: #328ae7; /* Change border color on focus */
+  outline: none; 
+  border-color: white; 
 }
