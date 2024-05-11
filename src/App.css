@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.custom-dropdown {
+  align-items: center;
+  width: 200px; /* Set the width of the dropdown */
+  height: 40px; /* Set the height of the dropdown */
+  padding: 5px 10px; /* Padding inside the dropdown */
+  font-size: 16px; /* Size of the text */
+  border: 2px solid #ccdae9; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: white; /* Background color */
+  color: #333; /* Text color */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.custom-dropdown:hover {
+  background-color: #ccdae9; /* Change background on hover */
+}
+
+.custom-dropdown:focus {
+  outline: none; /* Remove the focus outline */
+  border-color: #328ae7; /* Change border color on focus */
+}
