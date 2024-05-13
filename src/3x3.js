@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { DropDown } from "./DropDown";
 
 function Matrix3({ value }) {
-  const  matrixsize  = value;
+  const matrixsize = value;
   const [grid, setGrid] = useState([]);
   const [isXNext, setIsXNext] = useState(true);
   const [winner, setWinner] = useState(null);
@@ -87,28 +87,27 @@ function Matrix3({ value }) {
 
   return (
     <div>
-      {/* <p
-        className="d-flex justify-content-center align-items-center"
-        style={{ marginTop: "20px", color:"#B3C8CF"}}
+      <p
+        className="d-flex  align-items-center"
+        style={{ justifyContent: "center" }}
       >
-        This is a {matrixsize}x{matrixsize} square matrix.{" "}
-      </p> */}
-      <p className="d-flex  align-items-center"
-      style={{justifyContent:"center"}}>
-        {/* <button type="button" className="btn btn-outline-secondary" style={{marginRight:"2vw"}}>
-        <i class="fa-solid fa-backward"></i> &nbsp; Back
-        </button> */}
-        <div className="turntitle" style={{ color: "#D6DAC8", marginRight:"2vw", marginLeft:"2vw"}}>
-        
-          {winner ? `${winner} wins!` : `${isXNext ? "Turn of - X" : "Turn of - O"}`}
+        <div
+          className="turntitle"
+          style={{ color: "#D6DAC8", marginRight: "2vw", marginLeft: "2vw" }}
+        >
+          {winner
+            ? `${winner} wins!`
+            : `${isXNext ? "Turn of - X" : "Turn of - O"}`}
         </div>
-        
-        <button type="button" className="btn btn-outline-secondary" onClick={resetGame}>
+
+        <button
+          type="button"
+          className="btn btn-outline-secondary"
+          onClick={resetGame}
+        >
           Reset &nbsp;
           <i class="fa-solid fa-rotate-right"></i>
         </button>
-        
-        
       </p>
       <div
         style={{
@@ -137,9 +136,7 @@ function Matrix3({ value }) {
         onRestart={resetGame}
         onClose={() => setShowModal(false)}
       />
-      <div className="d-flex justify-content-center align-items-center">
-      
-      </div>
+      <div className="d-flex justify-content-center align-items-center"></div>
     </div>
   );
 }

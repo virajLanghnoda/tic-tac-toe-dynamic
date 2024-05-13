@@ -19,21 +19,24 @@
     height: 8vh;
     font-size: 3vh;
   }
-  .turntitle{
+
+  .turntitle {
     font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 601px) {
-  .myelement  {
+  .myelement {
     width: 8vw;
     height: 8vw;
     font-size: 3vw;
   }
-  .turntitle{
+
+  .turntitle {
     font-size: 20px;
   }
 }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -49,34 +52,24 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
 .custom-dropdown {
   align-items: center;
-  width: 200px; 
-  height: 40px; 
-  padding: 5px 10px; 
+  width: 200px;
+  height: 40px;
+  padding: 5px 10px;
   font-size: 20px;
-  border: 2px solid #748291; 
-  border-radius: 15px; 
-  background-color: #76ABAE; 
-  color: #333; 
-  cursor: pointer; 
+  border: 2px solid #748291;
+  border-radius: 15px;
+  background-color: #76ABAE;
+  color: #333;
+  cursor: pointer;
 }
 
 .custom-dropdown:hover {
-  background-color: #B2A59B; 
+  background-color: #B2A59B;
 }
 
 .custom-dropdown:focus {
-  outline: none; 
-  border-color: white; 
+  outline: none;
+  border-color: white;
 }

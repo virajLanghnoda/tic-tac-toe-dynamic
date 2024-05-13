@@ -6,8 +6,6 @@ function Modal({ isOpen, winner, onRestart, onClose }) {
     <div>
       
       <div className="modal-backdrop show"></div>
-
-      {/* Modal window */}
       <div
         className="modal show d-block"
         tabIndex="-1"
